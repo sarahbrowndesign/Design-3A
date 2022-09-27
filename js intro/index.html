@@ -47,6 +47,7 @@
 </head>
 <body>
 <main>
+    
     <div class="container">
         <!-- an emmet shortcut to create all the elements is ".shape*50"-->
         <div class="shape"></div>
@@ -102,6 +103,35 @@
     </div>
 </main>
 <script>
+        const clr = ["HotPink", 
+                'Pink',
+                'PaleVioletRed',
+                'Fuchsia',
+                'DarkSlateBlue',
+                'Violet',
+                'DarkOrchid',
+                "SlateBlue",
+                "Medium Orchid",
+                "Plum",
+                "Light Pink",
+                "Cyan",
+                "SteelBlue"
+
+]
+    const shapes = document.querySelectorAll(".shape")
+    shapes.forEach(function(shape){
+    let randomRadius = Math.floor(Math.random() * 100)
+    let randomColorIndex = Math.floor(Math.random() * clr.length)
+    shape.style.background = clr[randomColorIndex]
+    shape.style.borderRadius = `${randomRadius}px 0px ${randomRadius}px 0px`
+    shape.addEventListener("mouseover", function (){
+        let randomRadius = Math.floor(Math.random() * 100)
+    let randomColorIndex = Math.floor(Math.random() * clr.length)
+    shape.style.background = clr[randomColorIndex]
+    shape.style.borderRadius = `${randomRadius}px 0px ${randomRadius}px 0px`
+    })
+
+    })
 
 </script>
 </body>
