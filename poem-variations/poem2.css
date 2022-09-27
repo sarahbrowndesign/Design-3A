@@ -1,0 +1,41 @@
+body {
+
+    background-color: rgb(35, 108, 173);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+@keyframes example {
+    0%   {background-color:rgb(35, 39, 96);}
+    25%  {background-color:rgb(32, 65, 119);}
+    50%  {background-color:rgb(43, 43, 187);}
+    75%  {background-color:rgb(36, 73, 168);}
+    100% {background-color:rgb(84, 102, 185);}
+
+}
+
+h1 {
+
+    font-size: 205%;
+    color: aliceblue;
+    margin: 45px;
+    text-align: center;
+    text-shadow: 5px 8px black;
+}
+
+p {
+
+    color: aliceblue;
+    text-align: center;
+    margin:20px 60px;
+ 
+    
+}
+
+body {
+    background-color: rgb(78, 91, 207);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
